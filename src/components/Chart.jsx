@@ -33,14 +33,24 @@ const Chart = ({ priceData, type }) => {
 
     let borderColor;
 
+    // if (type === 'ratings') {
+    //     borderColor = 'rgb(192, 192, 75)';
+    // } else if (type === 'reviews') {
+    //     borderColor = 'rgb(192, 75, 192)';
+    // } else {
+    //     borderColor = 'rgb(75, 192, 192)';
+    // }
+
     if (type === 'ratings') {
         borderColor = 'rgb(192, 192, 75)';
+        backgroundColor = 'rgba(0, 128, 0, 0.1)';
     } else if (type === 'reviews') {
         borderColor = 'rgb(192, 75, 192)';
+        backgroundColor = 'rgba(0, 0, 255, 0.1)';
     } else {
         borderColor = 'rgb(75, 192, 192)';
+        backgroundColor = 'rgba(255, 0, 0, 0.1)';
     }
-
     let chartData = {
         labels: labels,
         datasets: [
