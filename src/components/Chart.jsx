@@ -32,6 +32,7 @@ const Chart = ({ priceData, type }) => {
 
 
     let borderColor;
+    let backgroundColor;
 
     // if (type === 'ratings') {
     //     borderColor = 'rgb(192, 192, 75)';
@@ -59,6 +60,7 @@ const Chart = ({ priceData, type }) => {
                 data: data,
                 fill: false,
                 borderColor,
+                backgroundColor,
                 tension: 0.1,
             },
         ],
